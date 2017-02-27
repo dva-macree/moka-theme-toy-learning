@@ -21,7 +21,11 @@ import './common/css/loading.text.less'
 import './common/css/pace.text.less'
 import utils from './common/utils'
 
-
+/**
+    reactRouter 
+    Router  a common low-level interface for all router components    
+    Route   renders some UI when a URL matches a location
+ */
 utils.remotePromise()
 .then(remote => {
     const appReducers = combineReducers(Object.assign({}, reducers, {

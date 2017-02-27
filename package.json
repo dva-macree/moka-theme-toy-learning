@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "open http://localhost:8080/webpack-dev-server/ && node index.js",
+    "dev": "node index.js",
     "build": "webpack -p --mini --define process.env.NODE_ENV='\"production\"' --progress --colors",
     "cdev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",
     "test": "echo \"Error: no test specified\" && exit 1"

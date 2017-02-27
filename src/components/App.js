@@ -154,7 +154,11 @@ class App extends React.Component {
 
         Array.isArray(fillCovers) && utils.fillCovers(sorted, main, fillCovers, lazyLoadCover)
 
+        //根据路径判断不同的页面类型
         if(utils.isRootPath(pathname) || utils.isPostsPath(pathname)) {
+            /**
+                根路径 post路径下的页面
+             */
             utils.setTitle('Posts - '+title);
             utils.setMainSummary(main, summaryNumber-0)
             if(utils.isRootPath(pathname)) {
@@ -200,6 +204,9 @@ class App extends React.Component {
                 ])
             )
         } else if(utils.isTagsRootPath(pathname) || utils.isTagsPagesPath(pathname)) {
+            /**
+                某个Tag下的articles 页面
+             */
             utils.setTitle('Tags - '+title);
             let items;
             if(!index.tagItems) {

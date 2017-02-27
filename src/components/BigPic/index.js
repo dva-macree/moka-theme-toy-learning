@@ -72,3 +72,8 @@ class BigPic extends React.Component {
 }
 
 export default BigPic;
+
+/**
+    ReactCSSTransitionGroup
+
+ */

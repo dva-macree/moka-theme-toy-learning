@@ -1,0 +1,67 @@
+{
+  "avatar": "/moka-png.png",
+  "title": " Moyu Dev Blog ",
+  "description": " Web, Node C/C++ Dev ",
+
+  "mainInfoColor": "",
+  "canvasColor": "",
+
+  "leftPercentage": 50,
+
+  "pageSize": 6,
+  "summaryNum": 50,
+
+  "iconTarget": "_blank",
+  "projectTarget": "_blank",
+
+  "home": {
+    "title": "About Me",
+    "contentHtml": "<p>I’m a Javascript enthusiast. I'm a member of Baidu BEFE team and try my best to improve myself. I’m also a nodejs, c/c++ dev, Sometimes.</p><p><img class='emoji' src='http://emojipedia-us.s3.amazonaws.com/cache/08/84/088419f4d97c19762c29008c4a89bbf4.png'/></p>"
+  },
+  "projects": [
+    {
+      "title": "Moka & Theme",
+      "image": "https://segmentfault.com/img/bVEjtX",
+      "link": "https://github.com/moyuyc/moka"
+    }
+  ],
+
+  "icon": [
+    {
+      "weibo": "http://weibo.com/2848472365"
+    },
+    {
+      "github": "https://github.com/moyuyc"
+    },
+    {
+      "envelope-o": "mailto:492899414@qq.com"
+    }
+  ],
+
+  "coverImage": {
+    "images": {
+      "tags": "http://imglf2.nosdn.127.net/img/Yzdqa2tRRFRTNEpReTRuTFFucjNPVk5NNkRqVW4vOTB4Z3B4eUJEenQwL2h0Z2FkbWsrditRPT0.jpg?imageView&thumbnail=880x0&quality=96&stripmeta=0&type=jpg",
+      "home": "http://ww3.sinaimg.cn/mw690/b2b1bff9jw1f8sw000k46j20mj0gw77z.jpg",
+      "article": "http://imglf0.nosdn.127.net/img/OUhlS2V6aytkSnkyRW9FL0hFcVVLeC9jMCtqc0ZRcStjVERCL0pWdzlnZHZNeFZFZi9DQXlBPT0.jpg?imageView&thumbnail=880x0&quality=96&stripmeta=0&type=jpg",
+      "search": "http://ww2.sinaimg.cn/mw690/b2b1bff9jw1f8tf00mm95j20sg0izah4.jpg",
+      "notExist": "http://imglf1.nosdn.127.net/img/QmJDb3pZMGZVMzdOeTVFL1IrQ00zNUF0c3FRZ243N2FVRE9pZ1ZJQjdYY2E4V0VCbW0rcStRPT0.jpg?imageView&thumbnail=1280x0&quality=96&stripmeta=0&type=jpg",
+      "posts": [
+        "http://ww2.sinaimg.cn/mw690/b2b1bff9jw1f8iyjsupqnj20zk0npjx2.jpg",
+        "http://ww4.sinaimg.cn/mw690/b2b1bff9jw1f7sfho5fh6j20hs0hs40f.jpg",
+        "http://ww4.sinaimg.cn/mw690/b2b1bff9jw1f86a2cf8xfj20mj0tmdv7.jpg"
+      ]
+    },
+    "articleCover": true
+  },
+
+  "music": {
+    "id": "69355290",
+    "auto": false,
+    "style": {
+      "left": "80px",
+      "top": "15px",
+      "right": "",
+      "bottom": ""
+    }
+  }
+}

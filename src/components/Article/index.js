@@ -1,5 +1,9 @@
 /**
  * Created by Moyu on 16/10/20.
+
+    figure HTML5的新标签，使用figuer元素标记文档中的一个图像
+    <figure> 标签规定独立的流内容（图像、图表、照片、代码等等）。
+    <figure> 元素的内容应该与主内容相关，同时元素的位置相对于主内容是独立的。如果被删除，则不应对文档流产生影响。
  */
 import React from 'react';
 import {Link} from 'react-router'

@@ -5,6 +5,14 @@ import fetch from 'isomorphic-fetch'
 const moka = window.__moka__ || {};
 
 var loadEl;
+/**
+    Promise
+    回调地狱的问题
+    > 回调函数的真正的副作用在于
+        它剥夺了使用return 和 throw 这些关键字的能力
+    Promise 给予的就是在我们使用异步时丢失的重要的语言基石：throw return 以及堆栈
+
+ */
 
 module.exports = {
     remotePromise() {
@@ -51,7 +59,7 @@ module.exports = {
     isArchivePath(pathname) {
         return /^\/?archive\/?$/.test(pathname)
     },
-    
+    //获取文章的概要
     getSummary(html, summaryNum=100) {
         const div = document.createElement('div');
         div.innerHTML = html;
