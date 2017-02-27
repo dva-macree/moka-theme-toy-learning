@@ -16,7 +16,30 @@ import Pagination from './Pagination'
 import Footer from './Footer'
 import ArtNext from './ArtNext'
 import utils from '../common/utils'
-
+/*============================================
+    react 的组件生命周期
+    实例化
+        首次实例化
+            getDefaultProps
+            getInitialState
+            componentWillMount  在完成首次渲染之前调用，此时仍可以修改组件的state。
+            render
+            componentDidMount   真实的DOM被渲染出来后调用，
+        实例化完成后的更新
+            getInitialState
+            componentWillMount  componentWillMount里允许我们初始化前最后一次对state进行修改，而不会触发重新渲染。
+            render
+            componentDidMount
+    存在期
+        组件已存在时的状态改变
+            componentWillReceiveProps   组件接收到新的props时调用，并将其作为参数nextProps使用，此时可以更改组件props及state。
+            shouldComponentUpdate       组件是否应当渲染新的props或state，返回false表示跳过后续的生命周期方法
+            componentWillUpdate         接收到新的props或者state后，进行渲染之前调用，此时不允许更新props或state。
+            render
+            componentDidUpdate          完成渲染新的props或者state后调用，此时可以访问到新的DOM元素。
+        销毁&清理期
+            componentWillUnmount        组件被移除之前被调用，可以用于做一些清理工作，在componentDidMount方法中添加的所有任务都需要在该方法中撤销，比如创建的定时器或添加的事件监听器。
+ ============================================*/
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -29,6 +52,14 @@ class App extends React.Component {
     }
     componentWillUpdate(nextProps, nextState, nextContext) {
     }
+    /*================================================
+        react.context
+        react context 的作用
+        在react中，数据以流的形式自上而下的传递，
+        但在一些情况下，我们希望在某一级的自组件中直接得到上N级父组件的props中的值
+        即所谓的 【越级传递】
+
+     =================================================*/
     componentWillReceiveProps(nextProps) {
         const {params, state, location} = nextProps;
         const {router} = this.context;
@@ -98,6 +129,10 @@ class App extends React.Component {
     state = {
 
     }
+
+    /*================================================
+        contextTypes是React中的一个类型验证机制，用于验证context属性的类型
+     ================================================*/
     static contextTypes = {
         router: React.PropTypes.object.isRequired
     }
